@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>Student Registration Form Using Table in HTML</title>
+<style> 
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: rgb(10, 10, 10);
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #d0d0d0 0%, #e98c8c 100%);  
+ border-collapse: collapse; 
+ border: 4px solid #3a3a39;
+ border-style: dashed; 
+}
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number]{
+ width: 50%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+input[type=submit], input[type=reset]{
+ width: 15%;
+ padding: 8px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<h2>Student Registration Form Using Table in HTML</h3>
+<table align="center" cellpadding = "10">
+<!--------------------- First Name ------------------------------------------>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="50" placeholder="Kalyan " />
+</td>
+</tr>
+<!------------------------ Last Name --------------------------------------->
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="50" placeholder="Pallela"/>
+
+</td>
+</tr>
+<!-------------------------- Email ID ------------------------------------->
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="EmailID" maxlength="100" placeholder="kalyanpallela@gmail.com"/></td>
+</tr>
+<!-------------------------- Mobile Number ------------------------------------->
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10" placeholder="9347xxxxxx"/>
+</td>
+</tr>
+<!---------------------- Gender ------------------------------------->
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+</td>
+</tr>
+<!--------------------------Date Of Birth----------------------------------->
+<tr>
+<td>Date of Birth(DOB)</td>
+<td>
+  <input type="date"  class="input" required> <br><br>
+</td>
+</tr>
+<!------------------------- Address ---------------------------------->
+<tr>
+<td>Address<br /><br /><br /></td>
+<td><textarea name="Address" rows="10" cols="50"></textarea></td>
+</tr>
+<!-------------------------- City ------------------------------------->
+<tr>
+<td>City</td>
+<td><input type="text" name="City" maxlength="50" placeholder="Anakapalli"/>
+
+</td>
+</tr>
+<!----- -------------------- Pin Code-------------------------------------->
+<tr>
+<td>Pin Code</td>
+<td><input type="Number" name="PinCode" maxlength="6" placeholder="531xxx"/>
+
+</td>
+</tr>
+<!---------------------------- State ----------------------------------->
+<tr>
+<td>State</td>
+<td><input type="text" name="State" maxlength="50" placeholder="Andhra pradesh"/>
+
+</td>
+</tr>
+<!------------------------------ Country --------------------------------->
+<tr>
+<td>Country</td>
+<td><input type="text" name="Country" placeholder="India" /></td>
+</tr>
+
+<!-----------------------Qualification---------------------------------------->
+<tr>
+<td>Qualification <br /><br /><br /></td>
+<td>
+<br/>
+<input type="checkbox" name="HighSchool" value="High School" />
+High School(10th)<br>
+<input type="checkbox" name="HigherSchool" value="Higher School" />
+Higher School(12th)<br/>
+<input type="checkbox" name="Graduation" value="Graduation" />
+Graduation(Bachelors)<br/>
+<input type="checkbox" name="PostGraduation" value="Post Graduation" />
+Post Graduation(Masters)<br/>
+<input type="checkbox" name="Phd" value="Phd">
+Phd
+</td>
+</tr>
+<!---------------------------- Courses ----------------------------------->
+<tr>
+<td>Courses<br />Applied For</td>
+<td>
+<input type="radio" name="Diploma" value="Diploma">
+Diploma (ECE,EEE,CSE,MECH)<br>
+<input type="radio" name="CourseB.Tech" value="B.Tech">
+B.Tech(Bachelor of Technologys)<br>
+<input type="radio" name="CourseBSc" value="B.Sc">
+B.Sc(Bachelor of Science)<br>
+<input type="radio" name="CourseBA" value="B.A">
+BA(Bachelor of Arts)<br>
+<input type="radio" name="CourseMCA" value="BCA">
+MCA(Master of Computer Applications)<br>
+<input type="radio" name="CourseMCom" value="B.Com">
+M.Com(Master of Commerce)<br>
+<input type="radio" name="CourseMSc" value="B.Sc">
+M.Sc(Master of Science)<br>
+<input type="radio" name="CourseMA" value="B.A">
+MA(Master of Arts)<br>
+</td>
+</tr>
+<!----------------------- Submit and Reset ------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+
+	<footer>
+		<p>Privacy & Policy</p>
+		<p>Terms & Conditions</p>
+		
+		<p>Copyright &copy; 2023</p>
+		
+</footer>
+</body>
+</html>
